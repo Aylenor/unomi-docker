@@ -1,7 +1,9 @@
 # Unomi Docker Image
+This is a fork of Mike Ghen's repository. 
+Link to Mike Ghen's repository : https://github.com/mikeghen/unomi-docker
 
-![Docker Pulls](https://img.shields.io/docker/pulls/mikeghen/unomi.svg)
- [![](https://images.microbadger.com/badges/version/mikeghen/unomi:1.3.svg)](https://microbadger.com/images/mikeghen/unomi:1.3 "Get your own version badge on microbadger.com")
+Here an update was done in order to work with Apache Unomi 1.4.0
+
 # Running Unomi
 Unomi requires ElasticSearch so it is recommended to run Unomi and ElasticSearch using docker-compose:
 ```

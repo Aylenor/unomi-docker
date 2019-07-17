@@ -19,16 +19,16 @@ FROM openjdk:8-jre
 
 # Unomi environment variables
 ENV KARAF_INSTALL_PATH /opt
-ENV KARAF_HOME $KARAF_INSTALL_PATH/apache-unomi
-ENV PATH $PATH:$KARAF_HOME/bin
+ENV MY_KARAF_HOME $KARAF_INSTALL_PATH/apache-unomi
+ENV PATH $PATH:$MY_KARAF_HOME/bin
 ENV KARAF_OPTS "-Dunomi.autoStart=true"
-WORKDIR $KARAF_HOME
+WORKDIR $MY_KARAF_HOME
 
-RUN wget http://apache.mirrors.pair.com/incubator/unomi/1.3.0-incubating/unomi-1.3.0-incubating-bin.tar.gz
-RUN tar -xzf unomi-1.3.0-incubating-bin.tar.gz
-RUN mv unomi-1.3.0-incubating/* .
-RUN rm unomi-1.3.0-incubating-bin.tar.gz
-RUN rm -r unomi-1.3.0-incubating
+RUN wget http://apache.mirrors.pair.com/unomi/1.4.0/unomi-1.4.0-bin.tar.gz
+RUN tar -xzf unomi-1.4.0-bin.tar.gz
+RUN mv unomi-1.4.0/* .
+RUN rm unomi-1.4.0-bin.tar.gz
+RUN rm -r unomi-1.4.0
 COPY ./entrypoint.sh ./entrypoint.sh
 
 EXPOSE 9443
