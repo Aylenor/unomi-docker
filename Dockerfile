@@ -29,6 +29,9 @@ RUN tar -xzf unomi-1.4.0-bin.tar.gz
 RUN mv unomi-1.4.0/* .
 RUN rm unomi-1.4.0-bin.tar.gz
 RUN rm -r unomi-1.4.0
+RUN groupadd -g 999 unomi && useradd -r -u 999 -g unomi unomi
+RUN chown -R unomi:unomi $MY_KARAF_HOME
+USER unomi
 COPY ./entrypoint.sh ./entrypoint.sh
 
 EXPOSE 9443
