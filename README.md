@@ -20,7 +20,11 @@ When you start the `unomi` image, you can adjust the configuration of the Unomi 
 - **`ELASTICSEARCH_HOST`** - The IP address of hostname for ElasticSearch
 - **`ELASTICSEARCH_PORT`** - The port for ElasticSearch
 
-# Pulling image from docker
+# Pulling image from docker hub
 
 An image was pushed on docker hub in order to make deployments on Red Hat OpenShift or Kubernetes.
-Simply use the tag : `ohajji/unomi:1.4.0`
+
+Simply use the tag : 
+`ohajji/unomi:1.4.0`
+
+Link to the docker image : https://hub.docker.com/r/ohajji/unomi
