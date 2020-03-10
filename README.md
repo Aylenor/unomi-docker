@@ -1,4 +1,7 @@
 # Unomi Docker Image
+![Docker Pulls](https://img.shields.io/docker/pulls/ohajji/unomi)
+[![](https://images.microbadger.com/badges/version/ohajji/unomi.svg)](https://microbadger.com/images/ohajji/unomi "Get your own version badge on microbadger.com")
+
 This is a fork of Mike Ghen's repository. 
 Link to Mike Ghen's repository : https://github.com/mikeghen/unomi-docker
 
